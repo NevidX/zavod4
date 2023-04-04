@@ -1,0 +1,88 @@
+// Main background color
+$mainBackColor:#eeeeee; 
+
+.body{
+	background-color: $mainBackColor;
+}
+//====<BRAKEPOINTS>=======
+$md1: 999.98px;
+$md2: 767.98px;
+$md3: 479.98px;
+$md4: 319.98px;
+//====<BRAKEPOINTS>=======
+
+// Fonts =================
+@font-face {
+	font-family: 'AdverGhotic';
+	src: url(/font/advergothic-normal.ttf) format('ttf'), url(/font/advergothic-normal.woff) format('woff');
+	font-weight: 400;
+  }
+@font-face {
+	font-family: 'AdverGhotic';
+	src: url(/font/advergothic-italic.ttf) format('ttf'), url(/font/advergothic-italic.woff) format('woff');
+	font-style: italic;
+	font-weight: 400;
+  }
+$AdverGhotic: AdverGhotic;
+
+.title{
+	font-family: $AdverGhotic;
+	font-size: 42px;
+}
+
+.main-title{
+	font-size: 42px;
+	text-align: center ;
+	margin-bottom: 35px;
+	@media (max-width:$md2){
+		font-size: 30px;
+	}
+	@media (max-width:$md3){
+		font-size: 20px;
+	}
+}
+
+.sub-title{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+// Fonts =================
+
+
+
+.wrapper{
+	overflow: hidden;
+	background-color: $mainBackColor;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.main{
+	flex: 1 1 auto;
+}
+html{
+	scroll-behavior: smooth;
+}
+// Container ==============
+.container{
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 5px 0 5px;
+}
+// Container ==============
+// IMG ================= 
+._img{
+	position: relative;
+	overflow: hidden;
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		top:0;
+		left:0;
+	}
+}
+// IMG ================= 

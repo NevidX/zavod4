@@ -1,0 +1,33 @@
+// NULL STYLE
+@import "block/_nullstyle.scss";
+
+//
+
+// VARS
+@import "block/_vars.scss";
+// =============================
+
+// COMPONENTS
+@import "block/_burger.scss";
+// ==============================
+
+// PARTS OF PAGE index.html
+@import "block/_header.scss";
+@import "block/_slider.scss";
+@import "block/_splitter.scss";
+@import "block/_news.scss";
+@import "block/_btn.scss";
+@import "block/_about.scss";
+@import "block/_contacts.scss";
+@import "block/_footer.scss";
+// =============================
+
+// PARTS OF PAGE about.html
+@import "block/_page-about.scss";
+@import "block/_types-prod.scss";
+@import "block/_video.scss";
+@import "block/_gallery.scss";
+// =============================
+
+
+

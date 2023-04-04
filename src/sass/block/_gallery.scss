@@ -1,0 +1,42 @@
+$gallerySlideWith: 860px;
+$gallerySlideHeight: 380px;
+
+.gallery{
+  width: $gallerySlideWith;
+  height: $gallerySlideHeight;
+  margin: 60px auto;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+.gallery-btn{
+    font-size: 50px;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding-top: 170px;
+}
+
+
+
+
+.slide-gallery{
+  width: $gallerySlideWith;
+    height: $gallerySlideHeight;
+    position: absolute;
+    transition: left ease 1s;
+    left: 0;
+    top: 0;
+    
+  
+}
+
+.gallery-img-overlay{
+  img{
+    width: $gallerySlideWith;
+    height: 370px;
+    object-fit: cover;
+  }
+}

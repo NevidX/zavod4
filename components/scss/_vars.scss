@@ -1,0 +1,36 @@
+//====<BRAKEPOINTS>=======
+$md1: 999.98px;
+$md2: 767.98px;
+$md3: 479.98px;
+$md4: 319.98px;
+//====<BRAKEPOINTS>=======
+
+// Fonts =================
+// Fonts =================
+.wrapper{
+	overflow: hidden;
+}
+html{
+	scroll-behavior: smooth;
+}
+// Container ==============
+.container{
+	margin: 0 auto;
+	max-width: 1300px;
+	padding: 0 5px 0 5px;
+}
+// Container ==============
+// IMG ================= 
+._img{
+	position: relative;
+	overflow: hidden;
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		top:0;
+		left:0;
+	}
+}
+// IMG ================= 

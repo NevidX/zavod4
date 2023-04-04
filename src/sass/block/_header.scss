@@ -1,0 +1,132 @@
+$headerColor:#fff500;
+$subMenuIsActive:block;
+
+
+
+.header {
+    background: $headerColor;
+    position: fixed;
+    display: flex;
+    z-index: 3;
+    width: 100%;
+    height: 60px;
+    font-family: $AdverGhotic;
+  }
+  .header__content {
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header__logo {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .header__logo img {
+    width: 60px;
+  }
+  
+  .header__nav {
+    flex-grow: 2;
+  }
+  
+  .header__nav-list {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+  }
+  
+  .header__nav-item {
+    position: relative;
+    max-height: 100px;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
+    text-transform: uppercase;
+  }
+  
+  .header__nav-sub-menu {
+    display: $subMenuIsActive;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .header__nav-sub-item {
+    height: 30px;
+    background: #707070;
+  }
+  
+  .header__nav-sub-item:hover {
+    background: #b8b8b8;
+    cursor: pointer;
+  }
+  
+  .header__nav-link {
+    display: block;
+    font-size: 15px;
+    color: black;
+    width: 100%;
+    line-height: 60px;
+    transition: all 0.3s linear;
+  }
+  
+  .header__nav-link:hover {
+    text-decoration: underline;
+  }
+  @media (min-width: $md1) {
+    .header__nav-sub-menu {
+      position: absolute;
+      display: none;
+}
+  
+    .header__nav-item:hover .header__nav-sub-menu {
+      display: flex;    }
+  
+  }
+
+  @media (max-width: $md1) {
+    .header__nav-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .header__nav-list {
+      display: block;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .header__logo {
+      flex-grow: 0;
+    }
+  
+    .header__nav-item {
+      margin-bottom: 15px;
+      width: 100%;
+      max-height: 500px;
+    }
+  
+    .header__nav {
+      display: none;
+    }
+  
+    .header__nav-sub-menu {
+      position: static;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.5s ease;
+    }
+  
+    .sub-menu-active {
+      max-height: 500px;
+      transition: all 0.5s ease;
+    }
+  
+  
+  }
