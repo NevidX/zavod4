@@ -3,7 +3,7 @@
 // Прогресс бар сделать попробовать с анимацией на главном слайдере
 // Посмотреть что со скриптом, ошибка на других страницах, нужно подключать только на той странице, где используется
 // 
-if(window.location.pathname == "/index.html"){
+
     let slides = document.querySelectorAll('.slide-single') // Получение коллекции слайдов
     let slider = []; // Иницилизация массива 
     let slide = document.querySelector('.slide'); // Получение всего блока слайдера
@@ -70,7 +70,7 @@ if(window.location.pathname == "/index.html"){
     draw();  
     slide.onclick = left;
     
-}
+
 
 
 
