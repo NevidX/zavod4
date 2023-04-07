@@ -10,8 +10,8 @@
 .types-production-text-area {
     display: grid;
     margin: 0 auto;
+    align-self: center;
     grid-template-columns: repeat(2,1fr);
-    max-width: 960px;
     column-gap: 30px;
     @media (max-width:$md1) {
         display: block;
@@ -21,7 +21,9 @@
 
 .types-production-block {
     display: flex;
-    margin-bottom: 30px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 500px;
     @media (max-width:$md1) {
         width: 400px;
         margin: 0 auto;
@@ -44,8 +46,7 @@ height: 45px;
 
 }
 .production-block-title {
-    font-size: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .production-block-sub-title {

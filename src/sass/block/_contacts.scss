@@ -15,20 +15,17 @@
     margin-bottom: 20px;
 }
 .contacts-block-title{
-font-size: 20px;
 }
 .contacts-title {
-    font-size: 28px;
     margin-bottom: 30px;
 }
-.sub-title {
-    line-height: 31px;
-}
+
 .contacts-sub-title {
+    line-height: 31px;
 }
 .contacts-map {
     width: 650px;
-    height: 400px;
+    height: 275px;
     @media (max-width:$md1) {
         margin-top: 10px;
     }

@@ -24,6 +24,7 @@
     max-width: 960px;
     padding: 10px;
     @media (max-width:1300px) {
+        max-width: 1200px;
         margin: 0 auto;
     }
     @media (min-width: $md1)  {
@@ -33,16 +34,8 @@
     
 }
 .about-intro-title {
-    font-size: 42px;
     margin-bottom: 20px;
     margin-top: 10px;
-    @media (max-width: $md4) {
-        font-size: 20px;
-    }
-    @media (max-width: $md3) {
-        font-size: 25px;
-    }
 }
 .about-intro-sub-title {
-    font-size: 17px;
 }

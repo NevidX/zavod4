@@ -1,5 +1,5 @@
-$gallerySlideWith: 860px;
-$gallerySlideHeight: 380px;
+$gallerySlideWith: 1200px;
+$gallerySlideHeight: 600px;
 
 .gallery{
   width: $gallerySlideWith;
@@ -16,16 +16,12 @@ $gallerySlideHeight: 380px;
     z-index: 2;
     color: white;
     text-align: center;
-    padding-top: 170px;
 }
-
-
 
 
 .slide-gallery{
   width: $gallerySlideWith;
     height: $gallerySlideHeight;
-    position: absolute;
     transition: left ease 1s;
     left: 0;
     top: 0;
@@ -34,9 +30,31 @@ $gallerySlideHeight: 380px;
 }
 
 .gallery-img-overlay{
+  width: 100%;
+
+    @media (max-width:1300px) {
+        margin: 0 auto;
+        height: 300px;
+    }
   img{
-    width: $gallerySlideWith;
-    height: 370px;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
   }
+}
+
+
+
+@media (max-width: 1200px) {
+  .gallery{
+    width: 100%;
+  }
+
+  .gallery-img-overlay{
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  
 }

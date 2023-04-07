@@ -25,26 +25,41 @@ $md4: 319.98px;
   }
 $AdverGhotic: AdverGhotic;
 
-.title{
+h2{
 	font-family: $AdverGhotic;
 	font-size: 42px;
-}
-
-.main-title{
-	font-size: 42px;
-	text-align: center ;
-	margin-bottom: 35px;
 	@media (max-width:$md2){
 		font-size: 30px;
 	}
 	@media (max-width:$md3){
+		font-size: 25px;
+	}
+}
+h3{
+	font-family: $AdverGhotic;
+	font-size: 25px;
+	@media (max-width:$md2){
 		font-size: 20px;
 	}
 }
 
 .sub-title{
 	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	line-height: 31px;
+
+	@media (max-width:$md3){
+		font-size: 15px;
+	}
 }
+
+.main-title{
+	text-align: center ;
+	margin-bottom: 35px;
+	
+}
+
+
 
 
 // Fonts =================
