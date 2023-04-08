@@ -6,4 +6,33 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     font-family: $AdverGhotic;
     font-size: 17px;
+    @media (max-width:$md3) {
+        width: 160px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+.arrow-bottom-2 {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 20px;
+    height: 40px;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+.arrow-bottom-2 path {
+    fill: #fff500;
+    stroke-width: .3;
+    stroke: black;    
+    transition: fill 0.5s ease-out;
+    cursor: pointer;
+}
+
+.arrow-bottom-2 path:hover {
+    fill: rgb(207, 200, 2);
 }

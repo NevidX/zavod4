@@ -1,11 +1,13 @@
 .contacts {
-   margin: 150px auto;
-    display: flex;
+   margin: $marginHeader auto;
     justify-content: space-between;
     @media (max-width:$md1) {
         flex-direction: column;
-        margin: 70px auto;
     }
+}
+
+.contacts-index-page{
+    margin-top: 30px;
 }
 .contacts-text-area {
     max-width: 434px;
@@ -14,10 +16,21 @@
 .contacts-block {
     margin-bottom: 20px;
 }
+.contacts-block-main{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @media (max-width:$md1) {
+        flex-direction: column;
+    }
+}
+
 .contacts-block-title{
+    margin-bottom: 30px;
 }
 .contacts-title {
-    margin-bottom: 30px;
+    text-align: center;
+
 }
 
 .contacts-sub-title {
@@ -25,11 +38,10 @@
 }
 .contacts-map {
     width: 650px;
-    height: 275px;
+    min-height: 300px;
     @media (max-width:$md1) {
         margin-top: 10px;
-    }
-    @media (max-width:$md2) {
+        height: 150px;
         width: 100%;
     }
 }

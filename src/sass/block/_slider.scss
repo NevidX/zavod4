@@ -1,6 +1,8 @@
 $slideWith: 100%;
 $slideHeight: 700px;
 
+
+
 .slide{
   width: $slideWith;
   height: $slideHeight;
@@ -14,20 +16,41 @@ $slideHeight: 700px;
   margin-right: auto;
   left: 0;
   right: 0;
-  top: 40%;
+  bottom: 60%;
   text-align: center;
   color: white;
   font-style: italic;
   z-index: 2;
   padding: 0 5px 0 5px;
-  @media (max-width: $md4) {
-    top: 30%;
-  }
-  @media (max-width: $md3) {
-    top: 30%;
-  }
  
  
+}
+
+.slide-indicator{
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.slide-arrow-btn{
+  bottom: 3%;
+}
+
+.slide-stage{
+  width: 50px;
+  height: 5px;
+  margin: 0 10px 0 10px;
+  background-color: rgba(207, 207, 207, 0.747);
+}
+
+.slide-stage-active{
+  background-color: #fff500;
 }
 
 .slide-sub-title{
@@ -38,24 +61,13 @@ $slideHeight: 700px;
   padding: 0 5px 0 5px;
   left: 0;
   right: 0;
-  top: 50%;
+  bottom: 40%;
   text-align: center;
   font-weight: bold;
   color: white;
   z-index: 2;
   margin-top: 35px;
 
-  @media (max-width: $md4) {
-    top: 40%;
-    margin-top: 0px;
-  }
-
-  @media (max-width: $md3) {
-    top: 40%;
-  }
-
-  @media (max-width: $md2) {
-  }
   
 }
 
@@ -72,7 +84,7 @@ $slideHeight: 700px;
 .slide-btn{
   position: absolute;
   left:0;
-  top: 80%;
+  bottom: 10%;
   right: 0;
   margin-left: auto;
   margin-right: auto;
@@ -85,5 +97,30 @@ $slideHeight: 700px;
     height: $slideHeight;
     object-fit:cover;
     opacity: 0.6;
+  }
+}
+
+
+@media (max-width: $md3) {
+  .slide{
+    height: 400px;
+  }
+
+  .slide-img-overlay{
+    img{
+      height: 400px;
+    }
+  }
+
+  .slide-title{
+    top: 5%;
+  }
+
+  .slide-sub-title{
+    top: 13%;
+  }
+
+  .slide-btn{
+    top: 45%;
   }
 }
