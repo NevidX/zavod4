@@ -2,6 +2,11 @@
 let slides = document.querySelectorAll('.slide-single'); // получение коллекции слайдов
 let slider = []; // инициализация массива
 let slide = document.querySelector('.slide'); // получение всего блока слайдера
+
+let slideBtnNext = document.querySelectorAll('.slide-btn-switch-next');
+let slideBtnBack = document.querySelectorAll('.slide-btn-switch-back');
+
+
 let imageSize = slide.offsetWidth;
 for (let i = 0; i < slides.length; i++) {
   slider[i] = slides[i];
@@ -74,6 +79,8 @@ slider.forEach(() => {
 // подсвечиваем первый индикатор
 let stages = document.querySelectorAll('.slide-stage');
 stages[0].classList.add('slide-stage-active');
+
+
 
 draw();
 draw();
