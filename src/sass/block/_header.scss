@@ -7,12 +7,21 @@ $subMenuIsActive:block;
     background: $headerColor;
     position: fixed;
     display: flex;
+    align-items: center;
     z-index: 3;
     width: 100%;
     height: 60px;
     font-family: $AdverGhotic;
   }
+  .header__contact{
+    position: absolute;
+    right: 10px;
+  }
+  .header__contact:hover{
+    text-decoration: underline;
+  }
   .header__content {
+    
     max-width: 1000px;
     height: 100%;
     margin: 0 auto;
@@ -80,6 +89,7 @@ $subMenuIsActive:block;
     text-decoration: underline;
   }
   @media (min-width: $md1) {
+
     .header__nav-sub-menu {
       position: absolute;
       display: none;
@@ -95,7 +105,10 @@ $subMenuIsActive:block;
       flex-direction: column;
       align-items: center;
     }
-  
+
+    .header__contact{
+      display: none;
+    }
     .header__nav-list {
       display: block;
       flex-direction: column;

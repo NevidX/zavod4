@@ -1,5 +1,6 @@
-
-let slides = document.querySelectorAll('.slide-single'); // получение коллекции слайдов
+if (document.querySelector(".slide")) {
+  // код для работы со слайдером
+  let slides = document.querySelectorAll('.slide-single'); // получение коллекции слайдов
 let slider = []; // инициализация массива
 let slide = document.querySelector('.slide'); // получение всего блока слайдера
 
@@ -36,6 +37,7 @@ function draw() {
 // Функция для перелистывания слайда
 function left() {
   slide.onclick = null;
+
   stageIndicator = (stageIndicator + 1 == slider.length) ? 0 : stageIndicator + 1;
   let slides2 = document.querySelectorAll('.slide-single');
   let offset2 = 0;
@@ -55,7 +57,6 @@ function left() {
   stages.forEach((stage, index) => {
     if (index === stageIndicator) {
       stage.classList.add('slide-stage-active');
-      console.log(step);
     } else {
       stage.classList.remove('slide-stage-active');
     }
@@ -90,3 +91,5 @@ slide.onclick = left;
 
 
 
+
+}
